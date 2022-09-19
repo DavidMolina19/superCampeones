@@ -1,0 +1,35 @@
+<app-menu></app-menu>
+
+
+<div class="container-fluid">
+    <div class="row row-cols-1 row-cols-md-5 g-5">
+        <div class="col "  *ngFor="let numerito of numeros">
+            <div class="card">
+                <h1>{{numerito}}</h1>
+                
+            </div>
+        </div>
+    </div>
+    <!-- <div class="row row-cols-1 row-cols-md-5 g-5">
+        <div class="col">
+            <div class="card" *ngFor="let personaje of personajes">
+                <h1>{{personaje}}</h1>
+
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-4 mt-5" *ngFor="let personaje of personajes">
+            <img src={{personaje.foto}} alt="foto" class="img-fluid w-100">
+
+            <h1 class="text-center">{{personaje.nombre}}</h1>
+            <h2 class="text-center">{{personaje.edad}}</h2>
+            
+        </div>
+    </div>
+</div>
+
